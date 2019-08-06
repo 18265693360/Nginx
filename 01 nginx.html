@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+<script>
+    /*
+    * 俄罗斯人 基于Apache 开发的一款基于c语言的代理服务器
+    * 内存消耗低 开源
+    *
+    *
+    *
+    *
+    * */
+
+    /*
+    mac nginx代理接口
+    * brew install nginx
+    * user/local/etc/nginx/ 目录下
+    * vim nginx.config 进入配置nginx
+    * server 默认8080端口 改成80端口
+    * 写 proxy_pass http://localhost:3003
+    * （本地接口端口）
+    * esc  :wq! 写入并保存
+    * sudo nginx -s reload
+    * 输入密码
+    * -s reload(不是第一次启动)
+    * 第一次启动 sudo nginx
+    * */
+
+    /*
+    * windows 中的 nginx代理接口
+    * 下载 Nginx 官网 dowload  下载 解压 放到c盘x86
+    *  右键单击 以管理员身份运行
+    *  localhost 就可以了
+    *  ipconfig 看window 电脑 ip
+    *  配置监听自己写的接口 config 中找到 nginx
+    *  编辑它
+    *  server listen  80;
+    *  注释 location #root
+    *               #index
+    *   写一个  proxy_pass http://localhost:3000
+    *   保存 重启nginx
+    *
+    * */
+</script>
+</html>
